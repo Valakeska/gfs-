@@ -25,6 +25,4 @@ jobs:
       run: dotnet restore
 
     - name: Run StyleCop analysis
-      run: dotnet build --no-restore --configuration Release /p:StyleCopEnabled=true /p:StyleCopAllAnalyzers=true /p:StyleCopIgnoreGeneratedCode=true
-
-    
+      run: dotnet stylecop analyze --no-build --verbosity quiet
