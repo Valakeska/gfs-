@@ -27,5 +27,4 @@ jobs:
     - name: Run StyleCop analysis
       run: dotnet build --no-restore --configuration Release /p:StyleCopEnabled=true /p:StyleCopAllAnalyzers=true /p:StyleCopIgnoreGeneratedCode=true
 
-    - name: Check StyleCop violations
-      run: dotnet stylecop
+    
